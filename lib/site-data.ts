@@ -29,7 +29,7 @@ export const PROJECTS = [
     ],
     tech: ['Next.js', 'TypeScript', 'Tailwind CSS'],
     demoUrl: 'https://northstar-cleaning-w-h3zw.bolt.host',
-    repoUrl: '',
+    repoUrl: 'https://github.com/rafael-d-santos-dev/northstar-cleaning',
     concept: true,
     preview: 'northstar' as const,
   },
