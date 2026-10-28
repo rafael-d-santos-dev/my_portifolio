@@ -1,0 +1,162 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Brand palette */
+    --lavender: 250 55% 98%;        /* #F7F5FF light background */
+    --lavender-soft: 248 40% 96%;
+    --ink: 257 30% 18%;              /* #27213B deep text */
+    --ink-soft: 255 22% 32%;
+    --violet: 244 89% 65%;           /* #6558F5 electric accent */
+    --violet-deep: 245 80% 55%;
+    --orange: 31 100% 71%;           /* #FFB86B warm highlight */
+    --orange-deep: 28 95% 60%;
+
+    /* Shadcn-mapped tokens */
+    --background: 250 55% 98%;
+    --foreground: 257 30% 18%;
+    --card: 0 0% 100%;
+    --card-foreground: 257 30% 18%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 257 30% 18%;
+    --primary: 244 89% 65%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 248 40% 96%;
+    --secondary-foreground: 257 30% 18%;
+    --muted: 248 40% 95%;
+    --muted-foreground: 255 18% 42%;
+    --accent: 31 100% 71%;
+    --accent-foreground: 257 30% 18%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 250 30% 91%;
+    --input: 250 30% 91%;
+    --ring: 244 89% 65%;
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 257 30% 11%;
+    --foreground: 250 40% 96%;
+    --card: 257 28% 14%;
+    --card-foreground: 250 40% 96%;
+    --popover: 257 28% 14%;
+    --popover-foreground: 250 40% 96%;
+    --primary: 244 89% 70%;
+    --primary-foreground: 257 30% 11%;
+    --secondary: 257 24% 20%;
+    --secondary-foreground: 250 40% 96%;
+    --muted: 257 24% 20%;
+    --muted-foreground: 250 16% 65%;
+    --accent: 31 100% 71%;
+    --accent-foreground: 257 30% 11%;
+    --destructive: 0 62% 45%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 257 24% 24%;
+    --input: 257 24% 24%;
+    --ring: 244 89% 70%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "ss01", "cv01";
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  ::selection {
+    background-color: hsl(var(--violet) / 0.22);
+    color: hsl(var(--ink));
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .text-pretty {
+    text-wrap: pretty;
+  }
+  .bg-grid {
+    background-image:
+      linear-gradient(hsl(var(--violet) / 0.06) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--violet) / 0.06) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+  .bg-dots {
+    background-image: radial-gradient(hsl(var(--violet) / 0.18) 1px, transparent 1px);
+    background-size: 22px 22px;
+  }
+  .mask-fade-b {
+    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent);
+    mask-image: linear-gradient(to bottom, black 70%, transparent);
+  }
+  .shadow-soft {
+    box-shadow:
+      0 1px 2px hsl(var(--ink) / 0.04),
+      0 8px 24px -12px hsl(var(--violet) / 0.18);
+  }
+  .shadow-lift {
+    box-shadow:
+      0 1px 2px hsl(var(--ink) / 0.05),
+      0 18px 40px -18px hsl(var(--violet) / 0.32);
+  }
+}
+
+/* Subtle, tasteful keyframe animations */
+@keyframes float-slow {
+  0%, 100% { transform: translate3d(0, 0, 0) rotate(0deg); }
+  50% { transform: translate3d(0, -14px, 0) rotate(2deg); }
+}
+@keyframes float-slower {
+  0%, 100% { transform: translate3d(0, 0, 0) rotate(0deg); }
+  50% { transform: translate3d(0, 18px, 0) rotate(-3deg); }
+}
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@keyframes pulse-ring {
+  0% { transform: scale(0.95); opacity: 0.7; }
+  70% { transform: scale(1.25); opacity: 0; }
+  100% { opacity: 0; }
+}
+@keyframes shimmer {
+  100% { transform: translateX(100%); }
+}
+@keyframes reveal-up {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-float-slow { animation: float-slow 7s ease-in-out infinite; }
+.animate-float-slower { animation: float-slower 9s ease-in-out infinite; }
+.animate-spin-slow { animation: spin-slow 28s linear infinite; }
+.animate-pulse-ring { animation: pulse-ring 3.2s ease-out infinite; }
+.animate-reveal-up { animation: reveal-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) both; }
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+  .animate-float-slow,
+  .animate-float-slower,
+  .animate-spin-slow,
+  .animate-pulse-ring {
+    animation: none !important;
+  }
+}
