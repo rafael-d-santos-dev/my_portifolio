@@ -51,7 +51,7 @@ export function Contact() {
                 </p>
                 <Link
                   href={`mailto:${SITE.email}`}
-                  className="mt-3 inline-flex items-center gap-1.5 break-all text-base font-medium text-white underline-offset-4 transition-colors hover:text-orange hover:underline"
+                  className="mt-2 inline-flex min-h-[44px] items-center gap-1.5 break-all rounded-md py-1 text-base font-medium text-white underline-offset-4 transition-colors hover:text-orange hover:underline"
                 >
                   {SITE.email}
                   <ArrowUpRight className="h-4 w-4 shrink-0" />
@@ -69,7 +69,7 @@ export function Contact() {
                   href={SITE.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-3 inline-flex items-center gap-1.5 break-all text-base font-medium text-white underline-offset-4 transition-colors hover:text-orange hover:underline"
+                  className="mt-2 inline-flex min-h-[44px] items-center gap-1.5 break-all rounded-md py-1 text-base font-medium text-white underline-offset-4 transition-colors hover:text-orange hover:underline"
                 >
                   github.com/rafael-d-santos-dev
                   <ArrowUpRight className="h-4 w-4 shrink-0" />

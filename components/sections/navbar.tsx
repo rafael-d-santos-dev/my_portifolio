@@ -47,12 +47,12 @@ export function Navbar() {
       )}
     >
       <nav
-        className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 sm:px-8"
+        className="mx-auto flex h-[68px] max-w-6xl items-center justify-between px-5 sm:px-8"
         aria-label="Primary"
       >
         <Link
           href="#top"
-          className="group flex items-center gap-2.5 rounded-md text-base font-semibold tracking-tight text-ink outline-none focus-visible:ring-2 focus-visible:ring-violet/70 focus-visible:ring-offset-2 focus-visible:ring-offset-lavender"
+          className="group flex min-h-[48px] items-center gap-2.5 rounded-md py-1 text-base font-semibold tracking-tight text-ink outline-none focus-visible:ring-2 focus-visible:ring-violet/70 focus-visible:ring-offset-2 focus-visible:ring-offset-lavender"
         >
           <span className="grid h-8 w-8 place-items-center rounded-lg bg-gradient-violet text-sm font-bold text-white shadow-soft transition-transform duration-300 group-hover:scale-105">
             RD
@@ -88,7 +88,7 @@ export function Navbar() {
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
-          className="grid h-10 w-10 place-items-center rounded-lg text-ink transition-colors hover:bg-violet/10 md:hidden outline-none focus-visible:ring-2 focus-visible:ring-violet/70"
+          className="grid h-12 w-12 place-items-center rounded-lg text-ink transition-colors hover:bg-violet/10 md:hidden outline-none focus-visible:ring-2 focus-visible:ring-violet/70"
           aria-label={open ? 'Close menu' : 'Open menu'}
           aria-expanded={open}
           aria-controls="mobile-menu"

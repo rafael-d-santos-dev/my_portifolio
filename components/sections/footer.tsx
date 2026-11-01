@@ -29,12 +29,12 @@ export function Footer() {
             <p className="text-xs font-semibold uppercase tracking-[0.16em] text-ink-soft/85">
               Navigation
             </p>
-            <ul className="mt-4 space-y-2.5">
+            <ul className="mt-4 space-y-1">
               {NAV_LINKS.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-ink-soft transition-colors hover:text-violet"
+                    className="inline-flex min-h-[44px] items-center rounded-md text-sm text-ink-soft transition-colors hover:text-violet"
                   >
                     {link.label}
                   </Link>
@@ -47,11 +47,11 @@ export function Footer() {
             <p className="text-xs font-semibold uppercase tracking-[0.16em] text-ink-soft/85">
               Connect
             </p>
-            <ul className="mt-4 space-y-2.5">
+            <ul className="mt-4 space-y-1">
               <li>
                 <Link
                   href={`mailto:${SITE.email}`}
-                  className="inline-flex items-center gap-2 text-sm text-ink-soft transition-colors hover:text-violet"
+                  className="inline-flex min-h-[44px] items-center gap-2 rounded-md text-sm text-ink-soft transition-colors hover:text-violet"
                 >
                   <Mail className="h-4 w-4" />
                   Email
@@ -62,18 +62,10 @@ export function Footer() {
                   href={SITE.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-sm text-ink-soft transition-colors hover:text-violet"
+                  className="inline-flex min-h-[44px] items-center gap-2 rounded-md text-sm text-ink-soft transition-colors hover:text-violet"
                 >
                   <Github className="h-4 w-4" />
                   GitHub
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#contact"
-                  className="inline-flex items-center gap-2 text-sm text-ink-soft transition-colors hover:text-violet"
-                >
-                  Contact
                 </Link>
               </li>
             </ul>
@@ -86,7 +78,7 @@ export function Footer() {
           </p>
           <Link
             href="#top"
-            className="inline-flex items-center gap-1.5 rounded-full border border-border bg-white/60 px-3.5 py-1.5 text-xs font-medium text-ink-soft transition-colors hover:border-violet/40 hover:text-violet"
+            className="inline-flex min-h-[44px] items-center gap-1.5 rounded-full border border-border bg-white/60 px-4 py-2.5 text-xs font-medium text-ink-soft transition-colors hover:border-violet/40 hover:text-violet"
           >
             Back to top
             <ArrowUp className="h-3.5 w-3.5" />
