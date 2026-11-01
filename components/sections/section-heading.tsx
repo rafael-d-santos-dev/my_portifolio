@@ -23,7 +23,7 @@ export function SectionHeading({
         className
       )}
     >
-      <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-violet">
+      <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-violet-deep">
         <span className="h-px w-6 bg-violet/50" />
         {eyebrow}
       </span>

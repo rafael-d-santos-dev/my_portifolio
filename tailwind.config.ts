@@ -68,10 +68,22 @@ const config: Config = {
           '4': 'hsl(var(--chart-4))',
           '5': 'hsl(var(--chart-5))',
         },
-        lavender: 'hsl(var(--lavender))',
-        ink: 'hsl(var(--ink))',
-        violet: 'hsl(var(--violet))',
-        orange: 'hsl(var(--orange))',
+        lavender: {
+          DEFAULT: 'hsl(var(--lavender))',
+          soft: 'hsl(var(--lavender-soft))',
+        },
+        ink: {
+          DEFAULT: 'hsl(var(--ink))',
+          soft: 'hsl(var(--ink-soft))',
+        },
+        violet: {
+          DEFAULT: 'hsl(var(--violet))',
+          deep: 'hsl(var(--violet-deep))',
+        },
+        orange: {
+          DEFAULT: 'hsl(var(--orange))',
+          deep: 'hsl(var(--orange-deep))',
+        },
       },
       keyframes: {
         'accordion-down': {

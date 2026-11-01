@@ -28,6 +28,15 @@ export function Navbar() {
     };
   }, [open]);
 
+  React.useEffect(() => {
+    if (!open) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setOpen(false);
+    };
+    document.addEventListener('keydown', onKey);
+    return () => document.removeEventListener('keydown', onKey);
+  }, [open]);
+
   return (
     <header
       className={cn(
@@ -69,7 +78,7 @@ export function Navbar() {
         <div className="hidden md:block">
           <Link
             href="#contact"
-            className="inline-flex items-center gap-1.5 rounded-full bg-ink px-5 py-2.5 text-sm font-semibold text-lavender shadow-soft transition-all duration-300 hover:bg-violet hover:shadow-lift outline-none focus-visible:ring-2 focus-visible:ring-violet/70 focus-visible:ring-offset-2 focus-visible:ring-offset-lavender"
+            className="group inline-flex items-center gap-1.5 rounded-full bg-ink px-5 py-2.5 text-sm font-semibold text-lavender shadow-soft transition-all duration-300 hover:bg-violet hover:shadow-lift outline-none focus-visible:ring-2 focus-visible:ring-violet/70 focus-visible:ring-offset-2 focus-visible:ring-offset-lavender"
           >
             Let&apos;s Work Together
             <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" />
@@ -90,6 +99,8 @@ export function Navbar() {
 
       <div
         id="mobile-menu"
+        aria-hidden={!open}
+        {...(!open ? { inert: '' } : {})}
         className={cn(
           'overflow-hidden border-t border-border/60 bg-lavender/95 backdrop-blur-md transition-[max-height,opacity] duration-300 md:hidden',
           open ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'

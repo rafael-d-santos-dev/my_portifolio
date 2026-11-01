@@ -16,7 +16,7 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://rafael-douglas.vercel.app'),
+  metadataBase: new URL('https://rafael-douglas-portf-y23z.bolt.host'),
   title: 'Rafael Douglas | Freelance Web Designer & Developer',
   description:
     'Explore the portfolio of Rafael Douglas, an aspiring freelance web designer and developer building modern, responsive websites and digital experiences for small businesses. Available for remote projects worldwide.',

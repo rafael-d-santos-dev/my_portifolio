@@ -28,7 +28,7 @@ export function Contact() {
                 className="[&_h2]:text-white [&_p]:text-white/85 [&_span]:text-white/80 [&_span_span]:bg-white/40"
               />
 
-              <p className="mt-6 max-w-md text-sm leading-relaxed text-white/80">
+              <p className="mt-6 max-w-md text-sm leading-relaxed text-white/90">
                 Whether you need a brand-new website or a redesign of an
                 existing one, I&apos;m happy to talk through the details with no
                 obligation.
@@ -45,7 +45,7 @@ export function Contact() {
 
             <div className="flex flex-col gap-4 rounded-2xl border border-white/15 bg-white/10 p-6 backdrop-blur-sm">
               <div>
-                <p className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-white/70">
+                <p className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-white/85">
                   <Mail className="h-3.5 w-3.5" />
                   Email
                 </p>
@@ -61,7 +61,7 @@ export function Contact() {
               <div className="h-px bg-white/15" />
 
               <div>
-                <p className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-white/70">
+                <p className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-white/85">
                   <Github className="h-3.5 w-3.5" />
                   GitHub
                 </p>
@@ -79,7 +79,7 @@ export function Contact() {
               <div className="h-px bg-white/15" />
 
               <div>
-                <p className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-white/70">
+                <p className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-white/85">
                   <Globe className="h-3.5 w-3.5" />
                   Availability
                 </p>

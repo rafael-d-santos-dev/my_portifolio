@@ -12,7 +12,7 @@ export function Services() {
   return (
     <section
       id="services"
-      className="relative border-y border-border/60 bg-lavender-soft/60 py-20 sm:py-28 lg:py-32"
+      className="relative isolate border-y border-border/60 bg-lavender-soft/60 py-20 sm:py-28 lg:py-32"
     >
       <div className="pointer-events-none absolute inset-0 -z-10 bg-dots opacity-40 mask-fade-b" />
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
@@ -40,7 +40,7 @@ export function Services() {
                 <p className="mt-3 text-[0.95rem] leading-relaxed text-ink-soft text-pretty">
                   {service.description}
                 </p>
-                <span className="mt-5 font-mono text-xs font-semibold text-violet/70">
+                <span className="mt-5 font-mono text-xs font-semibold text-violet">
                   0{i + 1}
                 </span>
               </article>

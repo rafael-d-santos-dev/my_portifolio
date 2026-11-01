@@ -99,6 +99,7 @@ function ProjectCard({
               href={project.demoUrl}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label={`Live Demo: ${project.name}`}
               className="inline-flex items-center gap-1.5 rounded-full bg-violet px-4 py-2.5 text-sm font-semibold text-white shadow-soft transition-all duration-300 hover:bg-violet-deep hover:shadow-lift outline-none focus-visible:ring-2 focus-visible:ring-violet/70 focus-visible:ring-offset-2 focus-visible:ring-offset-card"
             >
               <ExternalLink className="h-4 w-4" />
@@ -120,6 +121,7 @@ function ProjectCard({
               href={project.repoUrl}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label={`Source Code: ${project.name}`}
               className="inline-flex items-center gap-1.5 rounded-full border border-ink/15 bg-white/60 px-4 py-2.5 text-sm font-semibold text-ink transition-all duration-300 hover:border-violet/40 hover:text-violet outline-none focus-visible:ring-2 focus-visible:ring-violet/70 focus-visible:ring-offset-2 focus-visible:ring-offset-card"
             >
               <Github className="h-4 w-4" />

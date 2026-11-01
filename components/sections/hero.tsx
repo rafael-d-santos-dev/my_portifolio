@@ -27,7 +27,7 @@ export function Hero() {
             {SITE.role}
           </p>
 
-          <h1 className="mt-3 font-display text-[2.4rem] font-semibold leading-[1.05] tracking-tight text-ink text-balance sm:text-5xl lg:text-[3.5rem]">
+          <h1 className="mt-3 font-display text-[2rem] font-semibold leading-[1.08] tracking-tight text-ink text-balance sm:text-5xl lg:text-[3.5rem] sm:leading-[1.05]">
             I build websites that help{' '}
             <span className="relative whitespace-nowrap">
               <span className="relative z-10 text-violet">small businesses</span>

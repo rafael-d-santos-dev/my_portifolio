@@ -26,7 +26,7 @@ export function Footer() {
           </div>
 
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-ink-soft/70">
+            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-ink-soft/85">
               Navigation
             </p>
             <ul className="mt-4 space-y-2.5">
@@ -44,7 +44,7 @@ export function Footer() {
           </div>
 
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-ink-soft/70">
+            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-ink-soft/85">
               Connect
             </p>
             <ul className="mt-4 space-y-2.5">
@@ -81,7 +81,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col items-start justify-between gap-4 border-t border-border/60 pt-6 sm:flex-row sm:items-center">
-          <p className="text-xs text-ink-soft/70">
+          <p className="text-xs text-ink-soft/85">
             &copy; {year} {SITE.name}. All rights reserved.
           </p>
           <Link
