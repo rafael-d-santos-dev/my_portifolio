@@ -28,7 +28,7 @@ export const PROJECTS = [
       'Accessibility considerations',
     ],
     tech: ['Next.js', 'TypeScript', 'Tailwind CSS'],
-    demoUrl: 'https://northstar-cleaning-w-h3zw.bolt.host',
+    demoUrl: 'https://northstar-cleaning.ai.studio',
     repoUrl: 'https://github.com/rafael-d-santos-dev/northstar-cleaning',
     concept: true,
     preview: 'northstar' as const,
@@ -50,6 +50,33 @@ export const PROJECTS = [
     repoUrl: 'https://github.com/rafael-d-santos-dev/novafit-fitness-studio',
     concept: true,
     preview: 'novafit' as const,
+  },
+  {
+    name: 'AgendaFlow',
+    category: 'Multi-Industry Booking Platform',
+    description:
+      'A multi-industry appointment booking platform featuring a customer booking portal and an administrative dashboard for managing appointments, services, staff, customers, and business settings.',
+    features: [
+      'Seven-step customer booking workflow.',
+      'Dynamic availability and scheduling validation.',
+      'Administrative dashboard and calendar.',
+      'Customer CRM and team management.',
+      'Five configurable business environments.',
+    ],
+    tech: [
+      'React 19',
+      'TypeScript',
+      'Vite',
+      'Tailwind CSS v4',
+      'Motion',
+      'Lucide React',
+    ],
+    demoUrl:
+      'https://agendaflow-editorial-luxury-scheduling-platform.ai.studio',
+    repoUrl:
+      'https://github.com/rafael-d-santos-dev/agendaflow-booking-platform',
+    concept: true,
+    preview: 'agendaflow' as const,
   },
 ];
 
