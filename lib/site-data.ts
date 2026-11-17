@@ -80,6 +80,38 @@ export const PROJECTS = [
   },
 ];
 
+export const AI_CASE_STUDIES = [
+  {
+    name: 'NovaFit AI Assistant',
+    category: 'Fitness & Wellness Concept',
+    badge: 'AI Integration Concept',
+    businessProblem:
+      'Visitors may struggle to identify which fitness program or membership best matches their goals.',
+    proposedSolution:
+      'A website-integrated conversational assistant that helps visitors explore available programs, compare membership options and find a suitable next step.',
+    potentialBenefit:
+      'A simpler plan-discovery experience and clearer guidance toward the trial process.',
+    demoUrl: 'https://novafit-fitness-studio.vercel.app',
+    ctaLabel: 'Explore Live Concept',
+  },
+  {
+    name: 'NorthStar Service Advisor',
+    category: 'Home & Commercial Services Concept',
+    badge: 'AI Integration Concept',
+    businessProblem:
+      'Potential customers may be unsure which cleaning service or package best fits their property and needs.',
+    proposedSolution:
+      'A website-integrated service advisor that guides visitors through available cleaning services and pricing options before directing them to the quote form.',
+    potentialBenefit:
+      'A more straightforward service-selection experience and an easier path to requesting a quote.',
+    demoUrl: 'https://northstar-cleaning.ai.studio',
+    ctaLabel: 'Explore Live Concept',
+  },
+];
+
+export const AI_CASE_STUDIES_DISCLOSURE =
+  'These are conceptual demonstrations of proposed AI integrations. The current prototypes use predefined conversation flows and do not connect to live AI services.';
+
 export const SERVICES = [
   {
     title: 'Business Websites',

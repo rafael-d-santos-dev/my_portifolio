@@ -1,6 +1,7 @@
 import { Navbar } from '@/components/sections/navbar';
 import { Hero } from '@/components/sections/hero';
 import { Work } from '@/components/sections/work';
+import { AiCaseStudies } from '@/components/sections/ai-case-studies';
 import { Services } from '@/components/sections/services';
 import { About } from '@/components/sections/about';
 import { Process } from '@/components/sections/process';
@@ -20,6 +21,7 @@ export default function Home() {
       <main id="main" tabIndex={-1} className="outline-none">
         <Hero />
         <Work />
+        <AiCaseStudies />
         <Services />
         <About />
         <Process />
