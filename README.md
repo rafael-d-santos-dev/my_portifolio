@@ -1,79 +1,278 @@
 # Rafael Douglas | Freelance Web Designer & Developer
 
-A polished, modern personal portfolio for **Rafael Douglas**, an aspiring
-freelance web designer & developer building modern, responsive websites for
-small businesses. Available for remote projects worldwide.
+Personal portfolio showcasing modern, responsive websites and interactive digital experiences for businesses.
 
-Built with **Next.js (App Router)**, **TypeScript**, and **Tailwind CSS**.
+**Live Portfolio:** https://my-portifolio-eight-eta.vercel.app
 
-## Features
+**GitHub:** https://github.com/rafael-d-santos-dev
 
-- Sticky navigation with accessible mobile menu
-- Hero with an abstract CSS visual (no stock photos)
-- Selected Work: two project cards (NorthStar Cleaning & NovaFit Fitness Studio)
-  with live demo / source links and graceful pending placeholders
-- Services: Business Websites, Landing Pages, Responsive Website Redesign
-- About, Process (Discover → Plan → Build → Refine), Contact, and Footer
-- Mobile-first, fully responsive
-- Subtle animations that respect `prefers-reduced-motion`
-- Semantic HTML, keyboard navigation, visible focus indicators
+**Availability:** Remote Worldwide
 
-## Getting started
+---
+
+## About
+
+I'm Rafael Douglas, an aspiring freelance web designer and developer focused on building modern, responsive, and user-friendly digital experiences.
+
+My work combines frontend development, interface design, usability, and visual storytelling to create digital solutions for businesses.
+
+This portfolio presents independent concept projects and practical experiments developed to demonstrate my skills, creative direction, and technical growth.
+
+The projects displayed are portfolio demonstrations, not commissioned client work.
+
+## Selected Projects
+
+### 1. NorthStar Cleaning
+
+**Category:** Business Website / Service Experience
+
+A fictional cleaning service website concept focused on presenting services, pricing, and customer inquiry experiences through a responsive business interface.
+
+**Highlights:**
+- Responsive business website.
+- Service and pricing sections.
+- Interactive quote request form.
+- NorthStar Service Advisor conversational concept.
+- WhatsApp contact interface.
+
+**Live Demo:** https://northstar-cleaning.ai.studio
+
+**Source Code:** https://github.com/rafael-d-santos-dev/northstar-cleaning
+
+### 2. NovaFit Fitness Studio
+
+**Category:** Fitness Website / Cinematic Tech Experience
+
+A fictional fitness studio website redesigned around a premium Cinematic Tech visual direction, combining editorial layouts, athletic photography, and interactive training experiences.
+
+**Highlights:**
+- Cinematic responsive homepage.
+- Interactive training program filters.
+- Coaches and weekly schedule.
+- Membership selection.
+- Trial request form.
+- NovaFit Intelligence conversational assistant concept.
+
+**Live Demo:** https://novafit-fitness-studio.vercel.app
+
+**Source Code:** https://github.com/rafael-d-santos-dev/novafit-fitness-studio
+
+### 3. AgendaFlow
+
+**Category:** Scheduling Application / Web Interface
+
+A scheduling platform concept designed to demonstrate an organized and intuitive appointment-booking experience.
+
+**Highlights:**
+- Service selection.
+- Date and time selection.
+- Form validation.
+- Booking confirmation interface.
+- Responsive application layout.
+
+**Live Demo:** https://agendaflow-editorial-luxury-scheduling-platform.ai.studio
+
+**Source Code:** https://github.com/rafael-d-santos-dev/agendaflow-booking-platform
+
+> AgendaFlow is a frontend demonstration. It does not provide production booking infrastructure, persistent database storage, authentication, or real appointment transactions.
+
+### 4. APEX — Automotive Cinematic Experience
+
+**Category:** Automotive Website / Visual Storytelling
+
+A fictional premium automotive launch experience built around cinematic scrolling, dramatic product imagery, and editorial storytelling.
+
+**Highlights:**
+- Full-screen cinematic sections.
+- Scroll-driven image sequence.
+- Custom visual direction and typography.
+- Responsive desktop and mobile compositions.
+- Performance-conscious image loading.
+
+**Live Demo:** https://apex-automotive-cinematic-experienc.vercel.app/
+
+**Source Code:** https://github.com/rafael-d-santos-dev/apex-automotive-cinematic-experience
+
+> APEX is a fictional automotive concept. Its vehicle, brand, and specifications are illustrative.
+
+---
+
+## AI Integration Case Studies
+
+Two additional concept demonstrations explore how conversational interfaces could support business experiences.
+
+### NovaFit AI Assistant
+
+A predefined conversational guide that helps visitors explore fitness goals and receive program and membership recommendations.
+
+### NorthStar Service Advisor
+
+A predefined conversational service guide that helps visitors explore cleaning services and pricing options.
+
+Both demonstrations use predefined conversation flows and local application state.
+
+**Important:** These are AI integration concept studies, not live AI systems. They do not currently use an LLM, external AI API, or production backend.
+
+---
+
+## Services
+
+My current areas of focus include:
+
+- Business Websites
+- Landing Pages
+- Responsive Website Redesign
+- Interactive Frontend Experiences
+- UI Implementation
+- Digital Experiences for Small Businesses
+
+Graphic design and digital content creation are complementary areas of development.
+
+## Development Approach
+
+My workflow follows four main stages:
+
+1. **Discover** — Understand the project, audience, and objectives.
+2. **Plan** — Define structure, visual direction, and functionality.
+3. **Build** — Implement the responsive interface and interactions.
+4. **Refine** — Review, test, and improve the experience.
+
+The goal is to balance visual quality, usability, maintainability, and performance.
+
+## Technology & Tools
+
+The portfolio repository uses:
+
+- Next.js 13.5.1
+- React 18
+- TypeScript 5.2
+- Tailwind CSS 3
+- Lucide React
+
+Additional technologies and tools are used across individual projects depending on their requirements, including:
+
+- JavaScript
+- HTML5
+- CSS3
+- Vite
+- Three.js
+- GSAP
+- Supabase (optional integrations in applicable projects)
+- Git and GitHub
+- Vercel
+
+Not every technology listed is used in every project.
+
+## Portfolio Features
+
+- Responsive layouts.
+- Accessible mobile navigation.
+- Project showcase with live demo and source links.
+- Service presentation.
+- About and development process sections.
+- Contact information.
+- Subtle animations with reduced-motion support.
+- CSS-rendered project preview visuals.
+
+## Repository Structure
+
+```text
+my_portifolio/
+├── app/
+│   ├── layout.tsx
+│   ├── page.tsx
+│   └── globals.css
+├── components/
+│   └── sections/
+├── hooks/
+├── lib/
+│   └── site-data.ts
+├── public/
+├── README.md
+├── package.json
+├── next.config.js
+├── tailwind.config.ts
+└── tsconfig.json
+```
+
+This is a simplified overview of the portfolio repository.
+
+## Getting Started
+
+### Requirements
+
+- Node.js
+- npm
+
+### Installation
 
 ```bash
-# install dependencies
 npm install
+```
 
-# run the dev server
+### Development
+
+```bash
 npm run dev
+```
 
-# build for production
+Open [http://localhost:3000](http://localhost:3000).
+
+### Production Build
+
+```bash
 npm run build
 ```
 
-Then open <http://localhost:3000>.
+### Production Server
+
+```bash
+npm run start
+```
 
 ## Configuration
 
-Edit `lib/site-data.ts` to update:
+Portfolio content is organized in `lib/site-data.ts`.
 
-| Field | What to change |
-| --- | --- |
-| `SITE.email` | `rafaeldouglassantossilva211@gmail.com` (already set) |
-| `SITE.github` | `https://github.com/rafael-d-santos-dev` (already set) |
-| `SITE.location` | `Remote Worldwide` |
-| `PROJECTS[].demoUrl` / `repoUrl` | Add or update the live demo and source code URLs for each project |
-| `PROJECTS` | Add or edit project entries |
-| `SERVICES`, `PROCESS` | Adjust services and process steps |
+This file can be used to update:
 
-> The email link uses `mailto:rafaeldouglassantossilva211@gmail.com`. Email is
-> the primary contact method. No fake backend or "message sent" confirmation
-> is used.
+- Contact information.
+- GitHub profile.
+- Availability and location.
+- Project descriptions and links.
+- Services.
+- Development process.
 
 ## Deployment
 
-The project is ready to deploy on **Vercel**:
+The portfolio is deployed on Vercel:
 
-1. Push the repository to GitHub.
-2. Import it on [vercel.com](https://vercel.com).
-3. Vercel auto-detects Next.js — no extra config needed.
+https://my-portifolio-eight-eta.vercel.app
 
-It can also be deployed to Netlify (a `netlify.toml` is included).
+The repository also includes a Netlify configuration file.
 
-## Project structure
+## Project Transparency
 
-```
-app/                # Next.js App Router pages
-  layout.tsx        # Fonts + metadata
-  page.tsx          # Home page composition
-  globals.css       # Theme tokens + animations
-components/sections/ # Section components (navbar, hero, work, ...)
-lib/site-data.ts    # Editable content (projects, services, contact info)
-```
+All projects presented here are independent portfolio concepts and demonstrations.
 
-## Notes
+- No fictional client relationships are claimed.
+- No fabricated testimonials or customer results are presented as real.
+- Concept assistants are clearly distinguished from live AI integrations.
+- Demonstration forms and applications are not represented as production services.
+- Project capabilities and limitations are documented honestly.
 
-- The two projects shown are labelled as portfolio concepts.
-- No authentication, databases, paid APIs, or fabricated testimonials are used.
-- Project preview visuals are rendered with CSS so the site stays fast and
-  works without external screenshot assets.
+## Contact
+
+**Rafael Douglas**
+
+- GitHub: https://github.com/rafael-d-santos-dev
+- Portfolio: https://my-portifolio-eight-eta.vercel.app
+- Email: rafaeldouglassantossilva211@gmail.com
+
+Available for remote freelance opportunities worldwide.
+
+---
+
+## License
+
+This repository is a personal portfolio project. No open-source license has been granted.
