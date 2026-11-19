@@ -78,6 +78,23 @@ export const PROJECTS = [
     concept: true,
     preview: 'agendaflow' as const,
   },
+  {
+    name: 'APEX — Automotive Cinematic Experience',
+    category: 'Cinematic Web Experience',
+    description:
+      'A premium automotive web experience exploring cinematic storytelling through scroll-driven motion, custom Canvas rendering, and responsive visual design.',
+    features: [
+      'Cinematic Scroll Experience',
+      'Custom Canvas Engine',
+      'Responsive Art Direction',
+    ],
+    tech: ['React', 'TypeScript', 'GSAP', 'Vite'],
+    demoUrl: 'https://apex-automotive-cinematic-experienc.vercel.app/',
+    repoUrl:
+      'https://github.com/rafael-d-santos-dev/apex-automotive-cinematic-experience',
+    concept: true,
+    preview: 'apex' as const,
+  },
 ];
 
 export const AI_CASE_STUDIES = [

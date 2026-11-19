@@ -9,7 +9,7 @@ import {
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
-type PreviewKind = 'northstar' | 'novafit' | 'agendaflow';
+type PreviewKind = 'northstar' | 'novafit' | 'agendaflow' | 'apex';
 
 interface ProjectPreviewProps {
   kind: PreviewKind;
@@ -23,7 +23,10 @@ export function ProjectPreview({ kind, className }: ProjectPreviewProps) {
   if (kind === 'novafit') {
     return <NovaFitPreview className={className} />;
   }
-  return <AgendaFlowPreview className={className} />;
+  if (kind === 'agendaflow') {
+    return <AgendaFlowPreview className={className} />;
+  }
+  return <ApexPreview className={className} />;
 }
 
 function NorthStarPreview({ className }: { className?: string }) {
@@ -373,4 +376,107 @@ function AgendaFlowPreview({ className }: { className?: string }) {
     </div>
   );
 }
+
+function ApexPreview({ className }: { className?: string }) {
+  return (
+    <div
+      className={cn(
+        'relative flex h-full w-full flex-col justify-between overflow-hidden bg-[#050507] text-[#F4F5F7]',
+        className
+      )}
+      aria-hidden="true"
+    >
+      {/* Dramatic dark studio atmosphere & lighting */}
+      <div className="pointer-events-none absolute inset-0">
+        <div className="absolute -top-14 left-1/2 h-44 w-72 -translate-x-1/2 rounded-full bg-[#F4F5F7]/[0.07] blur-2xl" />
+        <div className="absolute bottom-8 left-1/4 h-24 w-48 -translate-x-1/2 rounded-full bg-[#D91E2A]/20 blur-2xl" />
+        <div className="absolute inset-x-0 bottom-0 h-[38%] border-t border-white/10 bg-gradient-to-b from-[#0B0C0F] to-[#050507]" />
+      </div>
+
+      {/* Editorial header & wordmark (positioned below card top badges) */}
+      <div className="relative z-10 flex items-end justify-between px-4 pt-12 sm:px-5 sm:pt-14">
+        <div className="flex flex-col">
+          <div className="flex items-baseline gap-1.5">
+            <span className="font-sans text-xl font-black uppercase tracking-[-0.06em] text-[#F4F5F7] sm:text-2xl">
+              APEX
+            </span>
+            <span className="font-mono text-xs font-bold tracking-[0.16em] text-[#D91E2A] sm:text-sm">
+              R-01
+            </span>
+          </div>
+          <span className="mt-0.5 text-[0.55rem] font-semibold uppercase tracking-[0.26em] text-[#F4F5F7]/65 sm:text-[0.6rem]">
+            SCULPTED FOR UNBROKEN AIR
+          </span>
+        </div>
+
+        <span className="hidden rounded border border-white/10 bg-[#0B0C0F]/80 px-2 py-0.5 font-mono text-[0.55rem] uppercase tracking-[0.18em] text-[#F4F5F7]/60 sm:inline-block">
+          AERO // CH-01
+        </span>
+      </div>
+
+      {/* Stylized CSS sports coupe silhouette */}
+      <div className="relative z-10 mx-auto my-auto flex w-full max-w-[17rem] flex-col items-center px-4 sm:max-w-[20rem]">
+        <div className="relative h-20 w-full sm:h-24">
+          {/* Aerodynamic airflow lines */}
+          <div className="absolute inset-x-6 top-1 h-px bg-gradient-to-r from-transparent via-[#F4F5F7]/20 to-transparent" />
+          <div className="absolute left-2 right-10 top-3.5 h-px bg-gradient-to-r from-transparent via-[#D91E2A]/35 to-transparent" />
+
+          {/* Vehicle silhouette container */}
+          <div className="absolute inset-x-3 bottom-2 h-14 sm:h-16">
+            {/* Cabin / greenhouse */}
+            <div className="absolute left-[22%] right-[24%] top-0 h-7 rounded-tl-[2.2rem] rounded-tr-[1rem] border-t border-white/25 bg-gradient-to-r from-[#181A22] via-[#252834] to-[#0B0C0F]" />
+            {/* Side glass */}
+            <div className="absolute left-[27%] right-[30%] top-1.5 h-3.5 rounded-tl-[1.5rem] rounded-tr-[0.5rem] bg-[#050507]/85 ring-1 ring-white/10" />
+
+            {/* Sculpted lower coupe chassis */}
+            <div className="absolute inset-x-0 bottom-2.5 h-7 rounded-tl-[0.6rem] rounded-tr-[1.7rem] rounded-bl-[0.35rem] rounded-br-[0.6rem] border-t border-white/20 bg-gradient-to-r from-[#12141B] via-[#1C1F29] to-[#0B0C0F] shadow-2xl">
+              {/* Side aero intake */}
+              <div className="absolute left-[34%] top-2 h-3 w-8 -skew-x-12 rounded-sm border-l-2 border-[#D91E2A]/85 bg-[#050507]" />
+              {/* Front splitter & headlight DRL */}
+              <div className="absolute right-0.5 top-2 h-1 w-4 -rotate-6 rounded-full bg-[#F4F5F7] shadow-[0_0_8px_rgba(244,245,247,0.8)]" />
+              {/* Rear tail-light blade */}
+              <div className="absolute left-0 top-1.5 h-1 w-5 rounded-full bg-[#D91E2A] shadow-[0_0_10px_#D91E2A]" />
+            </div>
+
+            {/* Front & rear wheels */}
+            <div className="absolute bottom-0 left-[12%] grid h-7 w-7 place-items-center rounded-full border border-white/15 bg-[#050507] shadow-lg sm:h-8 sm:w-8">
+              <div className="grid h-4 w-4 place-items-center rounded-full border border-white/25 bg-[#0B0C0F]">
+                <span className="h-1.5 w-1.5 rounded-full bg-[#D91E2A]/90" />
+              </div>
+            </div>
+            <div className="absolute bottom-0 right-[12%] grid h-7 w-7 place-items-center rounded-full border border-white/15 bg-[#050507] shadow-lg sm:h-8 sm:w-8">
+              <div className="grid h-4 w-4 place-items-center rounded-full border border-white/25 bg-[#0B0C0F]">
+                <span className="h-1.5 w-1.5 rounded-full bg-[#D91E2A]/90" />
+              </div>
+            </div>
+          </div>
+
+          {/* Ground reflection & red ambient underglow */}
+          <div className="absolute inset-x-4 bottom-1 h-1.5 rounded-full bg-[#050507] blur-[2px]" />
+          <div className="absolute bottom-1 left-6 h-0.5 w-20 rounded-full bg-[#D91E2A]/45 blur-[2px]" />
+        </div>
+      </div>
+
+      {/* Bottom technical telemetry & scroll progress strip */}
+      <div className="relative z-10 flex items-center justify-between border-t border-white/10 bg-[#0B0C0F]/95 px-4 py-2 backdrop-blur-sm sm:px-5">
+        <div className="flex items-center gap-2">
+          <span className="h-1.5 w-1.5 rounded-full bg-[#D91E2A]" />
+          <span className="font-mono text-[0.55rem] uppercase tracking-[0.18em] text-[#F4F5F7]/70">
+            CANVAS ENGINE ACTIVE
+          </span>
+        </div>
+
+        <div className="flex items-center gap-2">
+          <span className="font-mono text-[0.55rem] text-[#F4F5F7]/55">
+            01 / 04
+          </span>
+          <div className="h-1 w-14 overflow-hidden rounded-full bg-white/10 sm:w-20">
+            <div className="h-full w-2/5 rounded-full bg-[#D91E2A]" />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 
